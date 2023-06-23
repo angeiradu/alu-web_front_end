@@ -387,7 +387,7 @@
     color: var(--section-tagline-color);
     font-family: var(--section-tagline-font-family);
     text-transform: var(--section-tagline-transform);
-    font-weight: var(--section-tagline-font-weight);
+    font-weight: var(--section-fottetagline-font-weight);
     margin: var(--section-tagline-margin);
   }
   
@@ -398,6 +398,19 @@
   .section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
+  }
+  @media (max-width: 767px) {
+    :root {
+        --footer-padding: 5rem 2rem 1rem;
+    }
+    footer .social.nav,
+    footer .footer-nav {
+        text-align: center;
+    }
+    footer .social.nav li + li,
+    footer .footer-nav li + li {
+        padding-left: 2rem;
+    }
   }
   
   /* Section theming
